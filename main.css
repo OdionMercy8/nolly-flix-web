@@ -171,8 +171,7 @@ html {
   .des__price {
     font-size: 2.5rem;
     font-weight: 600;
-    color: #408ec6;
-    margin-left: 18rem; }
+    color: #408ec6; }
   .des__likes {
     height: 3rem;
     width: 3rem; }
@@ -217,7 +216,7 @@ html {
   justify-content: center; }
 
 .popup {
-  background-color: rgba(122, 32, 72, 0.8);
+  background-color: #ddd;
   position: fixed;
   top: 0;
   left: 0;
@@ -228,8 +227,7 @@ html {
   padding: 1rem;
   z-index: 1000;
   opacity: 0;
-  visibility: hidden;
-  transition: all 0.8s cubic-bezier(0, 1.88, 1, -0.13); }
+  visibility: hidden; }
   .popup__photo {
     height: 35rem;
     display: block;
@@ -260,7 +258,10 @@ html {
     @media only screen and (max-width: 56.25em) {
       .popup__well {
         width: 100%;
-        display: block; } }
+        display: block;
+        height: 20rem;
+        text-align: center;
+        padding-top: 5rem; } }
 
 .close {
   display: flex;
@@ -295,8 +296,3 @@ html {
 
 .item {
   padding: 1rem; }
-
-.casing {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }

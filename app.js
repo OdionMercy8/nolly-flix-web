@@ -1,6 +1,5 @@
 //POPUP OPE
 let popup = document.querySelector('.popup');
-let movies = document.querySelector('.movies');
 
 document.querySelector('.gate__about').addEventListener('click', function() {
     popup.style.opacity = 1 
@@ -73,8 +72,15 @@ function looplikes() {
     let like = parent.querySelector('.des__likes'); 
 
     (counts.textContent > 0) ? like.classList.add('blue') : like.classList.remove('blue')
-               
+
+    let parentEle = like.parentElement.parentElement
+    let price = parentEle.lastElementChild
+    if (counts.textContent >=  4) {
+        price.textContent = (0.5 + parseFloat( price.textContent)) + ' ' + '$'
+    }
+           
     let _movies =  document.querySelectorAll('.movie');
+    let movies = document.querySelector('.movies');
                
     _movies = Array.from(_movies).sort((a,b) => {
                    
@@ -92,34 +98,7 @@ function looplikes() {
 }    
 
 
-//PRICES
-
-    let cast =  document.querySelectorAll('.casing');
-    Array.from(cast).forEach(cur => { 
-        cur.addEventListener('click',function(e) {
-            if (e.target.className  = 'like') {
-                let parent = this;
-                let price = parent.querySelector('.des__price')
-                let counts = parent.querySelector('.counts')
-                if ( counts.textContent > 5) {
-                    price.textContent = (0.5 + parseFloat( price.textContent)) + ' ' + '$'
-                }
-                
-            
-            }
-            
-            
-        } )  
-    }) 
 
 
 
 
-
-
-              
-
-   
-   
-    
-   
