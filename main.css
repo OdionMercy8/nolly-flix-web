@@ -294,8 +294,13 @@ html {
       left: 25%;
       width: 30rem;
       margin-top: -1rem;
-      z-index: 1; } }
-
+      z-index: 1; }
+     }
+     @media only screen and (max-width:62.5em) {
+      .list {
+     position: absolute;
+      top: 8rem;
+      left: 30%; }}
 .li {
   opacity: 0;
   visibility: hidden; }
