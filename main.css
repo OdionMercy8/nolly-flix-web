@@ -44,14 +44,14 @@ html {
   font-size: 6rem;
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
-  color: #000;
+  color: #1e2761;
   padding: 1rem;
   transform: skewY(1.5deg) skewX(-25deg); }
 
 .nolly-flix {
   font-family: 'Dancing Script';
   font-size: 3rem;
-  color: #7a2048; }
+  color: #000; }
 
 .search {
   display: flex;
@@ -77,11 +77,13 @@ html {
   .search__logo {
     height: 3rem;
     width: 3rem;
-    margin-right: 1rem; }
+    margin-right: 1rem;
+    fill: #e6dddd; }
   .search__text {
-    font-size: 3rem; }
+    font-size: 3rem;
+    color: #e6dddd; }
   .search__block {
-    background-color: #7a2048;
+    background-color: #000;
     width: 14rem;
     display: flex;
     align-items: center;
@@ -115,7 +117,7 @@ html {
     height: 3rem;
     width: 3rem;
     margin-right: 1rem;
-    fill: #7a2048; }
+    fill: #1e2761; }
     @media only screen and (max-width: 50em) {
       .gate__movie {
         margin-right: 0; } }
@@ -127,6 +129,7 @@ html {
     margin-right: 2rem;
     transition: all .2s;
     padding: 1rem;
+    fill: #1e2761;
     cursor: pointer;
     margin-left: 2rem; }
     .gate__about:hover {
@@ -150,14 +153,14 @@ html {
   grid-template-rows: 35rem 5rem 5rem;
   align-items: center;
   overflow: hidden;
-  background-color: #7a2048; }
+  background-color: #000; }
   .movie__photo {
     display: block;
     width: 100%;
     height: 100%; }
   .movie__title {
     font-size: 2.5rem;
-    color: #408ec6;
+    color: #e6dddd;
     text-transform: uppercase;
     letter-spacing: 5px;
     text-align: center;
@@ -171,13 +174,15 @@ html {
   .des__price {
     font-size: 2.5rem;
     font-weight: 600;
-    color: #408ec6; }
+    color: #1e2761; }
   .des__likes {
     height: 3rem;
-    width: 3rem; }
+    width: 3rem;
+    fill: #e6dddd; }
   .des__love {
     height: 3rem;
     width: 3rem;
+    fill: #e6dddd;
     cursor: pointer; }
 
 .title {
@@ -188,13 +193,13 @@ html {
   transition: all .2s; }
 
 .counts {
-  font-size: 2rem;
-  color: #408ec6;
+  font-size: 2.5rem;
+  color: #1e2761;
   margin-right: 1rem;
   margin-bottom: -.5rem;
   outline: none;
   border: none;
-  background-color: #7a2048; }
+  background-color: #000; }
 
 .like {
   display: flex;
@@ -206,7 +211,7 @@ html {
 
 .copyright {
   font-size: 2.5rem;
-  color: #7a2048;
+  color: #000;
   text-align: center;
   font-size: 600;
   padding-bottom: 1rem; }
@@ -240,7 +245,7 @@ html {
     text-align: center;
     padding: 2rem;
     text-transform: uppercase;
-    transition: all 0.8s cubic-bezier(0, 1.88, 0.97, 0.71); }
+    color: #000; }
   .popup__court {
     width: 60%;
     display: table-cell; }
@@ -250,11 +255,12 @@ html {
         display: block; } }
   .popup__well {
     width: 40%;
-    background-color: #7a2048;
+    background-color: #000;
     display: table-cell;
     vertical-align: middle;
     font-size: 2rem;
-    padding: 1rem; }
+    padding: 1rem;
+    color: #e6dddd; }
     @media only screen and (max-width: 56.25em) {
       .popup__well {
         width: 100%;
@@ -268,7 +274,7 @@ html {
   justify-content: flex-end; }
 
 .blue {
-  fill: #408ec6; }
+  fill: #1e2761; }
 
 .list {
   position: absolute;
@@ -277,7 +283,7 @@ html {
   list-style: none;
   background-color: #fff;
   padding: 1rem;
-  color: #408ec6;
+  color: #1e2761;
   opacity: 0;
   visibility: hidden;
   transition: all .2s; }

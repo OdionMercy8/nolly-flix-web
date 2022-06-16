@@ -75,7 +75,7 @@ function looplikes() {
 
     let parentEle = like.parentElement.parentElement
     let price = parentEle.lastElementChild
-    if (counts.textContent >=  4) {
+    if (counts.textContent >= 4) {
         price.textContent = (0.5 + parseFloat( price.textContent)) + ' ' + '$'
     }
            
